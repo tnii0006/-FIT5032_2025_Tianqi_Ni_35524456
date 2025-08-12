@@ -10,5 +10,13 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
-  }
+  },
+  overrides: [
+    {
+      files: ['vite.config.js'],
+      env: {
+        node: true
+      }
+    }
+  ]
 }
